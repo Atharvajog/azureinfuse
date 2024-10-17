@@ -8,5 +8,5 @@ def hello():
  
 @app.route("/env")
 def show_env():
-    env_var = os.getenv('ENV_VARIABLE',None)
+    env_var = os.getenv('ENV_VAR',None)
     return f"<html><body><h1>Environment Variable: {env_var}</h1></body></html>\n"
